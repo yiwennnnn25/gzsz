@@ -1,0 +1,1738 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff8ef">
+  <title>China Family Trip 2026</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #2f261f;
+      --muted: #7e6d5d;
+      --line: #eadfce;
+      --paper: #fffdf8;
+      --cream: #fff8ef;
+      --peach: #ffb38a;
+      --rose: #f27d9d;
+      --matcha: #8ea95d;
+      --mint: #9cd3bd;
+      --sky: #99c9e6;
+      --gold: #d7a23a;
+      --shadow: 0 18px 45px rgba(91, 62, 38, .13);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-rounded, "SF Pro Rounded", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,248,239,.96), rgba(255,255,255,.98)),
+        repeating-linear-gradient(90deg, rgba(255,179,138,.12) 0 1px, transparent 1px 42px);
+      color: var(--ink);
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .app {
+      width: min(100%, 430px);
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--paper);
+      box-shadow: 0 0 0 1px rgba(101, 70, 40, .08), var(--shadow);
+      padding-bottom: 96px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 18px 16px 16px;
+      background:
+        linear-gradient(145deg, rgba(255,248,239,.78), rgba(255,231,214,.8)),
+        url("data:image/svg+xml,%3Csvg width='430' height='260' viewBox='0 0 430 260' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='430' height='260' fill='%23fff3e5'/%3E%3Ccircle cx='62' cy='72' r='31' fill='%23f27d9d' fill-opacity='.35'/%3E%3Ccircle cx='356' cy='48' r='45' fill='%238ea95d' fill-opacity='.24'/%3E%3Cpath d='M0 202 C86 160 139 215 212 177 C286 139 350 161 430 125 L430 260 L0 260Z' fill='%2399c9e6' fill-opacity='.25'/%3E%3Cpath d='M0 222 C88 197 156 231 231 201 C302 172 354 193 430 158 L430 260 L0 260Z' fill='%238ea95d' fill-opacity='.18'/%3E%3Cpath d='M29 138 h74 a10 10 0 0 1 10 10 v51 H19 v-51 a10 10 0 0 1 10-10Z' fill='%23fffdf8' stroke='%23d7a23a' stroke-width='3'/%3E%3Cpath d='M52 138 v-18 h28 v18' fill='none' stroke='%23d7a23a' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M306 118 c22-26 62-26 84 0 v77 h-84Z' fill='%23fffdf8' stroke='%23f27d9d' stroke-width='3'/%3E%3Cpath d='M319 142 h58 M319 164 h58 M337 118 v77 M359 118 v77' stroke='%23f27d9d' stroke-width='2' opacity='.45'/%3E%3Ccircle cx='213' cy='118' r='34' fill='%23fffdf8' stroke='%238ea95d' stroke-width='4'/%3E%3Cpath d='M196 115 c8 13 26 14 35 0' fill='none' stroke='%238ea95d' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='203' cy='103' r='4' fill='%232f261f'/%3E%3Ccircle cx='225' cy='103' r='4' fill='%232f261f'/%3E%3Cpath d='M186 151 h56' stroke='%23d7a23a' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 28px;
+      padding: 6px 9px;
+      border: 1px solid rgba(47, 38, 31, .1);
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      color: #5d4b3a;
+      font-size: 12px;
+      font-weight: 750;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 340px;
+      font-size: 34px;
+      line-height: .94;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 330px;
+      margin: 10px 0 0;
+      color: #5d4b3a;
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    .countdown {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .count-box, .stat, .soft-card, .day-card, .food-card, .shop-card, .tool-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.86);
+      box-shadow: 0 10px 25px rgba(91, 62, 38, .07);
+    }
+
+    .count-box {
+      padding: 10px 6px;
+      text-align: center;
+    }
+
+    .count-box b {
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .count-box span {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    section {
+      padding: 16px;
+      scroll-margin-top: 12px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .micro {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 650;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .stat {
+      padding: 12px;
+      min-height: 82px;
+    }
+
+    .stat b {
+      display: block;
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .progress-shell {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .progress-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #5d4b3a;
+    }
+
+    .bar {
+      height: 9px;
+      margin-top: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #f0e5d4;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--rose), var(--peach), var(--matcha));
+      transition: width .4s ease;
+    }
+
+    .soft-card {
+      padding: 13px;
+      margin-bottom: 10px;
+    }
+
+    .flight-grid, .stay-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .route-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .route-line b {
+      font-size: 14px;
+    }
+
+    .route-line span, .tiny {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 2px 0 11px;
+      scrollbar-width: none;
+    }
+
+    .filter-row::-webkit-scrollbar { display: none; }
+
+    .chip {
+      flex: 0 0 auto;
+      min-height: 34px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: #5d4b3a;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .chip.active, .chip:active {
+      color: #fff;
+      background: #2f261f;
+      border-color: #2f261f;
+    }
+
+    .food-list, .shop-grid, .tool-grid, .xhs-list, .sight-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .food-card {
+      padding: 13px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .today-card {
+      display: grid;
+      gap: 10px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(91, 62, 38, .07);
+    }
+
+    .today-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .today-tile {
+      min-height: 74px;
+      padding: 10px;
+      border-radius: var(--radius);
+      border: 1px solid #f0dec9;
+      background: #fffaf3;
+    }
+
+    .today-tile b {
+      display: block;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .today-tile span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      line-height: 1.3;
+    }
+
+    .xhs-card {
+      display: grid;
+      grid-template-columns: 94px 1fr;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(91, 62, 38, .06);
+    }
+
+    .xhs-card img {
+      width: 94px;
+      height: 132px;
+      border-radius: 7px;
+      object-fit: cover;
+      border: 1px solid #eadfce;
+      background: #fff8ef;
+    }
+
+    .xhs-card h3 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.15;
+    }
+
+    .xhs-card p {
+      margin: 6px 0 0;
+      color: #5e4d3d;
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    .xhs-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .sight-card {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .sight-card h3 {
+      margin: 0 0 6px;
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .sight-card p {
+      margin: 0;
+      color: #5e4d3d;
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 650;
+    }
+
+    .card-title {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .card-title h3 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    .card-title small {
+      white-space: nowrap;
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 23px;
+      padding: 4px 7px;
+      border-radius: 999px;
+      background: #f6eadb;
+      color: #684f39;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .tag.food { background: #ffe6ee; color: #9f3655; }
+    .tag.matcha { background: #eef4df; color: #587230; }
+    .tag.skip { background: #eef6f8; color: #3b7180; }
+    .tag.shop { background: #fff0c8; color: #805c02; }
+    .tag.train { background: #e6f2ff; color: #346486; }
+
+    .card-copy {
+      margin: 0;
+      color: #5e4d3d;
+      font-size: 13px;
+      line-height: 1.45;
+      font-weight: 600;
+    }
+
+    .mini-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .icon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: #fff8ef;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .text-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: #2f261f;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(91, 62, 38, .06);
+    }
+
+    details + details { margin-top: 10px; }
+
+    summary {
+      list-style: none;
+      padding: 13px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    .day-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .day-head h3 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+
+    .day-head .date {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .pace {
+      margin-top: 10px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .pace-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    .pace-dots {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+    }
+
+    .pace-dots span {
+      height: 7px;
+      border-radius: 99px;
+      background: #eee4d5;
+    }
+
+    .pace-dots span.on { background: var(--matcha); }
+    .pace-dots.medium span.on { background: var(--gold); }
+    .pace-dots.full span.on { background: var(--rose); }
+
+    .day-body {
+      padding: 0 13px 13px;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .time-item {
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      gap: 9px;
+      padding: 10px;
+      border-radius: var(--radius);
+      background: #fffaf3;
+      border: 1px solid #f1e5d6;
+    }
+
+    .time {
+      font-size: 12px;
+      font-weight: 950;
+      color: #9f3655;
+      line-height: 1.2;
+    }
+
+    .time-item h4 {
+      margin: 0 0 5px;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .time-item p {
+      margin: 0;
+      color: #65513f;
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 600;
+    }
+
+    .matcha-list, .check-list, .phrase-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .check-row {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 9px;
+      align-items: start;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .check-row input {
+      width: 21px;
+      height: 21px;
+      accent-color: var(--matcha);
+      margin: 1px 0 0;
+    }
+
+    .check-row b {
+      display: block;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .check-row span {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 650;
+    }
+
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .weather-card {
+      padding: 10px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+      min-height: 76px;
+    }
+
+    .weather-card b {
+      display: block;
+      font-size: 13px;
+    }
+
+    .weather-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 650;
+    }
+
+    .route-tabs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .route-btn {
+      min-height: 42px;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      color: #5d4b3a;
+    }
+
+    .route-btn.active {
+      background: #eaf4f1;
+      border-color: #b8d6cc;
+      color: #2f6756;
+    }
+
+    .route-display {
+      padding: 12px;
+      border-radius: var(--radius);
+      background: #fffaf3;
+      border: 1px solid #f0dec9;
+    }
+
+    .route-display h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    .route-display ol {
+      margin: 0;
+      padding-left: 20px;
+      color: #5e4d3d;
+      font-size: 13px;
+      line-height: 1.45;
+      font-weight: 650;
+    }
+
+    .shop-card {
+      padding: 12px;
+    }
+
+    .shop-card h3 {
+      margin: 0 0 7px;
+      font-size: 15px;
+      line-height: 1.15;
+    }
+
+    .shop-card p {
+      margin: 0;
+      color: #5e4d3d;
+      font-size: 12px;
+      line-height: 1.4;
+      font-weight: 650;
+    }
+
+    .budget-panel {
+      display: grid;
+      gap: 9px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 88px;
+      gap: 8px;
+    }
+
+    .field, .select-field {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffaf3;
+      padding: 9px 10px;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .budget-list {
+      display: grid;
+      gap: 7px;
+      margin-top: 2px;
+    }
+
+    .budget-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 0;
+      border-top: 1px dashed #eadfce;
+      font-size: 12px;
+      font-weight: 750;
+      color: #5e4d3d;
+    }
+
+    .photo-drop {
+      display: grid;
+      gap: 9px;
+      padding: 12px;
+      border: 1px dashed #d7b68c;
+      border-radius: var(--radius);
+      background: #fff9f0;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .photo-card {
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+      min-height: 142px;
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .photo-card span {
+      display: block;
+      padding: 7px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .phrase-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .phrase {
+      min-height: 62px;
+      padding: 8px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+      text-align: left;
+    }
+
+    .phrase b {
+      display: block;
+      font-size: 14px;
+      line-height: 1.1;
+    }
+
+    .phrase span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .nav {
+      position: fixed;
+      left: 50%;
+      bottom: max(12px, env(safe-area-inset-bottom));
+      transform: translateX(-50%);
+      width: min(calc(100% - 22px), 408px);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+      padding: 7px;
+      border: 1px solid rgba(47, 38, 31, .12);
+      border-radius: 999px;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 13px 35px rgba(47, 38, 31, .18);
+      backdrop-filter: blur(18px);
+      z-index: 20;
+    }
+
+    .nav a {
+      display: grid;
+      place-items: center;
+      min-height: 42px;
+      border-radius: 999px;
+      color: #6b5847;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .nav a span {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 3px;
+    }
+
+    .nav a:active, .nav a.active {
+      color: #fff;
+      background: #2f261f;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 74px;
+      transform: translateX(-50%) translateY(20px);
+      width: fit-content;
+      max-width: min(320px, calc(100% - 38px));
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: #2f261f;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 850;
+      opacity: 0;
+      pointer-events: none;
+      transition: .25s ease;
+      z-index: 30;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .section-band {
+      background: #fff8ef;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    @media (min-width: 700px) {
+      body { background-color: #f7efe4; }
+      .app { margin-top: 18px; margin-bottom: 18px; border-radius: 20px; overflow: hidden; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="hero" id="home">
+      <div class="topline">
+        <span class="pill">🇨🇳 Guangzhou + Shenzhen</span>
+        <span class="pill">6 pax</span>
+      </div>
+      <h1>China Family Food Trip</h1>
+      <p class="subtitle">10-16 May 2026 · Penang departure · built around food, gentle pacing, matcha, shopping, and easy family decisions.</p>
+      <div class="countdown" aria-label="Trip countdown">
+        <div class="count-box"><b id="cd-days">--</b><span>days</span></div>
+        <div class="count-box"><b id="cd-hours">--</b><span>hours</span></div>
+        <div class="count-box"><b id="cd-mins">--</b><span>mins</span></div>
+        <div class="count-box"><b id="cd-secs">--</b><span>secs</span></div>
+      </div>
+      <div class="progress-shell">
+        <div class="progress-row">
+          <span id="trip-state">Pre-trip mode</span>
+          <span id="trip-day">Day 0 of 7</span>
+        </div>
+        <div class="bar"><span id="trip-progress"></span></div>
+      </div>
+    </header>
+
+    <section id="xhs">
+      <div class="stats-grid">
+        <div class="stat"><b>7</b><span>days with 2 city bases</span></div>
+        <div class="stat"><b>18+</b><span>restaurant and snack options</span></div>
+        <div class="stat"><b>10</b><span>matcha and café stops</span></div>
+        <div class="stat"><b>2</b><span>high-speed train rides</span></div>
+      </div>
+    </section>
+
+    <section id="today" class="section-band">
+      <div class="section-head">
+        <div>
+          <h2>今日行程</h2>
+          <p class="micro">Open this first each morning: route, food priority, and tired-family fallback.</p>
+        </div>
+      </div>
+      <div class="today-card" id="todayCard"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>交通住宿</h2>
+          <p class="micro">Flights, hotels, and the two high-speed rail moves.</p>
+        </div>
+      </div>
+      <div class="soft-card flight-grid">
+        <div class="route-line"><b>CZ396 · PEN → CAN</b><span>10 May · 08:55-13:00</span></div>
+        <div class="route-line"><b>CZ395 · CAN → PEN</b><span>16 May · 16:50-21:00</span></div>
+      </div>
+      <div class="soft-card stay-grid">
+        <div><b>Guangzhou · Yuexiu</b><br><span class="tiny">10-14 May · No. 82 Zhuguang Road · 10-min walk to Beijing Road.</span></div>
+        <div><b>Shenzhen · Futian</b><br><span class="tiny">14-16 May · No. 321 Shixiadong Village · 5-min walk to COCO Park.</span></div>
+      </div>
+    </section>
+
+    <section id="food" class="section-band">
+      <div class="section-head">
+        <div>
+          <h2>必吃榜</h2>
+          <p class="micro">Family food shortlist, mapped to the itinerary clusters.</p>
+        </div>
+      </div>
+      <div class="filter-row" id="foodFilters">
+        <button class="chip active" data-filter="all">全部</button>
+        <button class="chip" data-filter="gz">广州</button>
+        <button class="chip" data-filter="sz">深圳</button>
+        <button class="chip" data-filter="hotel">酒店步行</button>
+        <button class="chip" data-filter="xhs">小红书</button>
+        <button class="chip" data-filter="must">值得排队</button>
+      </div>
+      <div class="food-list" id="foodList"></div>
+    </section>
+
+    <section id="matcha">
+      <div class="section-head">
+        <div>
+          <h2>抹茶打卡</h2>
+          <p class="micro">喝到就 tick，旅行小成就感。</p>
+        </div>
+        <span class="pill" id="matchaCount">0/10</span>
+      </div>
+      <div class="matcha-list" id="matchaList"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>截图美食库</h2>
+          <p class="micro">From your Desktop food folder, grouped by day, district, meal timing, and detour value.</p>
+        </div>
+      </div>
+      <div class="filter-row" id="xhsFilters">
+        <button class="chip active" data-xhs-filter="all">全部截图</button>
+        <button class="chip" data-xhs-filter="walk">酒店步行</button>
+        <button class="chip" data-xhs-filter="breakfast">早餐/早茶</button>
+        <button class="chip" data-xhs-filter="lunch">午餐</button>
+        <button class="chip" data-xhs-filter="dinner">晚餐</button>
+        <button class="chip" data-xhs-filter="beverage">Beverage Map</button>
+        <button class="chip" data-xhs-filter="queue">值得排队</button>
+        <button class="chip" data-xhs-filter="nearby">顺路去</button>
+        <button class="chip" data-xhs-filter="late">夜宵地图</button>
+        <button class="chip" data-xhs-filter="skip">疲惫可跳过</button>
+      </div>
+      <div class="xhs-list" id="xhsList"></div>
+      <div class="photo-drop">
+        <input class="field" id="xhsUpload" type="file" accept="image/*" multiple>
+        <select class="select-field" id="xhsArea">
+          <option>北京路 / 越秀酒店附近</option>
+          <option>荔湾 / 永庆坊 / 沙面</option>
+          <option>广州塔 / 海珠</option>
+          <option>天河 / 太古汇 / 正佳</option>
+          <option>深圳福田 / COCO Park</option>
+          <option>东门 / 华强北</option>
+          <option>OCT / 蛇口</option>
+        </select>
+        <div class="photo-grid" id="xhsGrid">
+          <div class="photo-card"><span>临时追加截图：上传后会在本机预览。固定进地图的话，把图放进 food folder 再让我整理。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="days" class="section-band">
+      <div class="section-head">
+        <div>
+          <h2>每日时间线</h2>
+          <p class="micro">Open one day at a time while you are out.</p>
+        </div>
+      </div>
+      <div id="dayList"></div>
+    </section>
+
+    <section id="shop">
+      <div class="section-head">
+        <div>
+          <h2>购物小抄</h2>
+          <p class="micro">哪里随便逛，哪里认真买，哪里快速撤。</p>
+        </div>
+      </div>
+      <div class="shop-grid" id="shopList"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>预算记录</h2>
+          <p class="micro">Saved on this phone/browser.</p>
+        </div>
+        <span class="pill" id="budgetTotal">RMB 0</span>
+      </div>
+      <div class="budget-panel">
+        <div class="form-grid">
+          <input class="field" id="budgetName" placeholder="项目 / 餐厅 / 战利品">
+          <input class="field" id="budgetAmount" type="number" min="0" inputmode="decimal" placeholder="RMB">
+        </div>
+        <div class="form-grid">
+          <select class="select-field" id="budgetCategory">
+            <option>吃喝</option>
+            <option>购物</option>
+            <option>交通</option>
+            <option>门票</option>
+            <option>手信</option>
+          </select>
+          <button class="text-btn" id="addBudget">加入</button>
+        </div>
+        <div class="form-grid">
+          <input class="field" id="myrRate" type="number" step="0.01" value="0.66" aria-label="MYR rate">
+          <button class="chip" id="clearBudget">Clear</button>
+        </div>
+        <div class="budget-list" id="budgetList"></div>
+      </div>
+    </section>
+
+    <section id="move" class="section-band">
+      <div class="section-head">
+        <div>
+          <h2>地铁 + 高铁</h2>
+          <p class="micro">Key transfers for the trip.</p>
+        </div>
+      </div>
+      <div class="route-tabs" id="routeTabs"></div>
+      <div class="route-display" id="routeDisplay"></div>
+    </section>
+
+    <section id="weather">
+      <div class="section-head">
+        <div>
+          <h2>天气</h2>
+          <p class="micro">Forecast refresh uses Open-Meteo when online.</p>
+        </div>
+        <button class="chip" id="refreshWeather">刷新</button>
+      </div>
+      <div class="weather-grid" id="weatherGrid">
+        <div class="weather-card"><b>广州</b><span>5 月偏热偏湿：透气衣服、伞、防晒、小风扇，商场冷气可带薄外套。</span></div>
+        <div class="weather-card"><b>深圳</b><span>沿海湿热，日落很美。水瓶和小风扇随身，海边晚一点会舒服。</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>景点小技巧</h2>
+          <p class="micro">The “how to enjoy it” notes, including Day 4 aquarium option.</p>
+        </div>
+      </div>
+      <div class="sight-list" id="sightList"></div>
+    </section>
+
+    <section id="tools" class="section-band">
+      <div class="section-head">
+        <div>
+          <h2>出行清单</h2>
+          <p class="micro">The practical bits that save the day.</p>
+        </div>
+        <span class="pill" id="packCount">0/18</span>
+      </div>
+      <div class="check-list" id="packingList"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>旅行相册</h2>
+          <p class="micro">Drop the best family photos here after the trip.</p>
+        </div>
+      </div>
+      <div class="photo-drop">
+        <input class="field" id="tripUpload" type="file" accept="image/*" multiple>
+        <div class="photo-grid" id="tripGrid">
+          <div class="photo-card"><span>旅行后照片墙：早茶、抹茶、购物战利品、夜景、全家合照。</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="nav" aria-label="Floating navigation">
+    <a href="#today"><span>🏠</span>今日</a>
+    <a href="#food"><span>🍜</span>必吃</a>
+    <a href="#days"><span>🗓️</span>行程</a>
+    <a href="#shop"><span>🛍️</span>买</a>
+    <a href="#tools"><span>🧳</span>工具</a>
+  </nav>
+  <div class="toast" id="toast">Copied</div>
+
+  <script>
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+    const store = {
+      get(key, fallback) {
+        try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+        catch { return fallback; }
+      },
+      set(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
+    };
+
+    const foodCards = [
+      { city: "gz", area: "Day 1 · 北京路 / 越秀", name: "大鸽饭", rating: "🔥", tags: ["must", "hotel", "queue"], dish: "招牌乳鸽饭 / 鸽子煲。出门前先在大众点评取号，没号就当成“备选大餐”。", near: "酒店步行圈 / 北京路周边" },
+      { city: "gz", area: "Day 1 · 北京路 / 越秀", name: "解忧小棋", rating: "XHS", tags: ["xhs", "hotel"], dish: "小笼包、鲜虾、粉色心形甜品。先看美团团购，适合第一晚不想走远。", near: "酒店步行圈 / 北京路周边" },
+      { city: "gz", area: "Day 1 · 北京路", name: "蟹上黄·蟹黄面（北京路步行街店）", rating: "XHS", tags: ["xhs", "hotel"], dish: "截图里这家就在教育路，适合想吃蟹黄拌面/蟹黄饭时顺手去。小贵，疲惫时别硬排。", near: "公园前地铁 D 口 / 北京路" },
+      { city: "gz", area: "Day 1/3 · 越秀", name: "达扬原味炖品（文明路）", rating: "◎", tags: ["hotel", "must"], dish: "广州老牌炖汤，椰子炖鸡/原只椰炖汤很适合长辈。酒店附近夜宵也能用。", near: "越秀 / 文明路" },
+      { city: "gz", area: "Day 1/3 · 越秀", name: "面记（越秀）", rating: "米", tags: ["hotel", "must"], dish: "米其林必比登小店，主打原盅炖汤，椰子炖鸡适合长辈。德政中路，离酒店不远。", near: "越秀 / 德政中路" },
+      { city: "gz", area: "Day 1/2 · 越秀/荔湾", name: "华记 / 民记煲仔饭", rating: "煲", tags: ["hotel", "xhs"], dish: "煲仔饭是低风险家庭选项：一人一煲，腊味/牛肉/窝蛋都稳。晚上比午餐更有感觉。", near: "北京路或西关分店" },
+      { city: "gz", area: "Day 2 · 荔湾早茶", name: "陶陶居", rating: "★", tags: ["must", "queue"], dish: "老字号早茶。红米肠、虾饺、叉烧酥、奶黄包。一定提前取号。", near: "荔湾 / 上下九 / 永庆坊动线" },
+      { city: "gz", area: "Day 2 · 荔湾早茶", name: "点都德", rating: "★", tags: ["must"], dish: "更现代、更稳的早茶选择。长辈友好，分店多，排队压力通常比陶陶居可控。", near: "荔湾、越秀、深圳都有分店" },
+      { city: "gz", area: "Day 2 · 西关小吃", name: "陈添记", rating: "◎", tags: ["xhs", "must"], dish: "鱼皮、艇仔粥、肠粉，适合永庆坊/沙面之前当小吃拼图，不建议当唯一正餐。", near: "荔湾 / 宝华路一带" },
+      { city: "gz", area: "Day 2 · 西关甜品", name: "南信牛奶甜品专家", rating: "甜", tags: ["xhs", "queue"], dish: "双皮奶、姜撞奶、红豆双皮奶。人多排队就打包，别把下午景点卡死。", near: "荔湾 / 上下九" },
+      { city: "gz", area: "Day 2 · 珠江夜游", name: "沿江路大排档", rating: "夜", tags: ["late"], dish: "游船前后都能接：烧烤、海鲜、啤酒气氛。适合想要热闹的一晚。", near: "天字码头 / 沿江路" },
+      { city: "gz", area: "Day 3 · 广州塔", name: "珠江南岸江景餐厅", rating: "景", tags: ["must"], dish: "这天重点是塔亮灯，不一定要吃最网红。订一张能看到塔的桌子就赢了。", near: "广州塔 / 海珠江边" },
+      { city: "gz", area: "Day 4 · 天河", name: "太古汇 / 正佳广场餐饮层", rating: "◎", tags: [], dish: "冷气、座位、洗手间都好。Day 4 如果带小朋友或长辈，这是最省心的午餐区。", near: "天河 / 珠江新城" },
+      { city: "gz", area: "Day 4 · 天河", name: "探探虎酸汤水饺 / 客语客家菜", rating: "顺", tags: ["xhs"], dish: "截图里的天河备选：博物馆后如果不想吃商场连锁，可以用这两家做顺路替换。", near: "体育东 / 天河一带" },
+      { city: "sz", area: "Day 5 · 福田", name: "潮汕牛肉火锅", rating: "🔥", tags: ["must", "hotel", "queue"], dish: "深圳锚点晚餐。嫩肉、匙柄、胸口朥、牛筋丸，蘸沙茶酱。不要换成普通火锅。", near: "福田 / COCO Park / 酒店周边" },
+      { city: "sz", area: "Day 5 · 福田", name: "烧腊饭 / 茶餐厅快午餐", rating: "快", tags: ["hotel"], dish: "抵达深圳后先补体力，别为了第一餐跑远。吃完再去华强北。", near: "福田酒店周边" },
+      { city: "sz", area: "Day 6 · OCT", name: "OCT-LOFT 咖啡餐厅", rating: "☕", tags: ["xhs"], dish: "午餐别太重，留胃给 % Arabica 和晚上蛇口。适合慢慢坐一会儿。", near: "华侨城创意园" },
+      { city: "sz", area: "Day 6 · 蛇口", name: "海上世界海鲜 / 烧烤大排档", rating: "★", tags: ["must", "late"], dish: "告别晚餐。海鲜适合正式吃，烧烤适合轻松夜宵气氛。", near: "蛇口海上世界" }
+    ];
+
+    const matchaSpots = [
+      ["% Arabica 太古汇", "广州 · 抹茶拿铁 / 焙茶 · Day 4"],
+      ["喜茶 Heytea", "广州 · 芝芝抹茶 / 纯抹茶 · 北京路或广州塔附近"],
+      ["奈雪的茶", "广州 · 抹茶奶 / 抹茶蛋糕 · 太古汇或正佳"],
+      ["永庆坊独立咖啡", "广州 · 抹茶饮品 + 西关小吃 · Day 2"],
+      ["Seesaw Coffee", "广州 · 抹茶系列 · 天河"],
+      ["% Arabica OCT-LOFT", "深圳 · 燕麦抹茶 · Day 6 锚点"],
+      ["霸王茶姬 CHAGEE", "深圳 · 玥珑抹茶 / 奶茶 · 福田附近"],
+      ["喜茶 COCO Park", "深圳 · 芝芝抹茶 · 酒店步行 5 分钟"],
+      ["万象天地 Food Hall", "深圳 · 抹茶软雪糕 / 麻薯 · Day 6"],
+      ["一点点", "深圳 · 预算友好抹茶奶茶 · 华强北 / 东门"]
+    ];
+
+    const xhsFood = [
+      { name: "蟹上黄·蟹黄面（北京路步行街店）", img: "food-thumbs/IMG_7032.jpg", day: "Day 1", district: "北京路 / 越秀", meal: "午餐/晚餐", value: "顺路去", tags: ["walk", "lunch", "dinner", "nearby"], note: "公园前 D 口一带，酒店步行圈。蟹黄拌饭/面适合想吃一点特别的，但评分不算爆炸，别为它牺牲正餐。" },
+      { name: "大鸽饭", img: "food-thumbs/IMG_7035.jpg", day: "Day 1 / Day 3", district: "北京路 / 广州塔可打车", meal: "晚餐", value: "值得排队", tags: ["walk", "dinner", "queue"], note: "截图是长隆店，但你们用北京路/市区分店更合理。提前取号，过号就换煲仔饭。" },
+      { name: "解忧小棋", img: "food-thumbs/IMG_7028.jpg", day: "Day 1", district: "北京路 / 越秀", meal: "晚餐", value: "顺路去", tags: ["walk", "dinner", "nearby"], note: "你原 itinerary 里的 XHS pick。适合第一晚轻松吃：小笼包、鲜虾、甜品。" },
+      { name: "达扬原味炖品（文明路）", img: "food-thumbs/IMG_7051.jpg", day: "Day 1 / Day 3", district: "越秀", meal: "下午/夜宵", value: "酒店步行", tags: ["walk", "late", "nearby"], note: "老广州炖汤，适合长辈和飞机后补一碗热的。文明路离北京路很顺。" },
+      { name: "民记煲仔饭", img: "food-thumbs/IMG_7034.jpg", day: "Day 1 / Day 2", district: "越秀 / 西关", meal: "午餐/晚餐", value: "顺路去", tags: ["walk", "lunch", "dinner", "nearby"], note: "煲仔饭是疲惫家庭友好答案：不用排大队也能吃得很广东。" },
+      { name: "香港庙街煲仔饭", img: "food-thumbs/IMG_7040.jpg", day: "Day 1 / Day 3", district: "越秀", meal: "晚餐/夜宵", value: "值得排队", tags: ["walk", "dinner", "late", "queue"], note: "截图说常等 30min，腊味+窝蛋是重点。适合不想吃鸽子饭那晚。" },
+      { name: "华记煲仔饭", img: "food-thumbs/IMG_7046.jpg", day: "Day 2", district: "西关 / 荔湾", meal: "午餐/晚餐", value: "顺路去", tags: ["lunch", "dinner", "nearby"], note: "可作为永庆坊/陈家祠之后的正餐，不要和太多小吃叠满。" },
+      { name: "银灯食府", img: "food-thumbs/IMG_7033.jpg", day: "Day 2", district: "荔湾 / 西关", meal: "早茶/午餐", value: "值得排队", tags: ["breakfast", "lunch", "queue"], note: "截图里红米肠、凤爪、牛肉丸都很强。适合 Day 2 早茶替代陶陶居。" },
+      { name: "陶陶居", img: "food-thumbs/IMG_7080.jpg", day: "Day 2", district: "荔湾", meal: "早茶", value: "值得排队", tags: ["breakfast", "queue"], note: "经典早茶锚点。只点招牌，不要每样都点，下午还有永庆坊和甜品。" },
+      { name: "点都德", img: "food-thumbs/IMG_7083.jpg", day: "Day 2 / Day 4", district: "荔湾 / 天河", meal: "早茶/午餐", value: "附近推荐", tags: ["breakfast", "lunch", "nearby"], note: "比陶陶居更稳更舒服。排队过久就切换到最近分店。" },
+      { name: "陈添记", img: "food-thumbs/IMG_7076.jpg", day: "Day 2", district: "荔湾 / 宝华路", meal: "午餐小吃", value: "顺路去", tags: ["lunch", "nearby"], note: "鱼皮、艇仔粥、肠粉，小份拼吃最适合。别当成完整大餐。" },
+      { name: "南信牛奶甜品专家", img: "food-thumbs/IMG_7075.jpg", day: "Day 2", district: "荔湾 / 上下九", meal: "甜品", value: "值得排队", tags: ["beverage", "queue", "nearby"], note: "双皮奶、姜撞奶、红豆双皮奶。排太久可以打包。" },
+      { name: "西关濑叔芝麻糊世家", img: "food-thumbs/IMG_7047.jpg", day: "Day 2", district: "荔湾 / 西关", meal: "甜品/夜宵", value: "顺路去", tags: ["beverage", "late", "nearby"], note: "芝麻糊、杏仁糊、核桃糊。适合沙面/永庆坊后补甜汤。" },
+      { name: "粤港糖水", img: "food-thumbs/IMG_7077.jpg", day: "Day 2", district: "荔湾", meal: "甜品/夜宵", value: "附近推荐", tags: ["beverage", "late", "nearby"], note: "芝麻糊、双皮奶、清补凉。人多时用作南信替代。" },
+      { name: "永记沙湾甜品", img: "food-thumbs/IMG_7041.jpg", day: "Day 1 / Day 2", district: "越秀", meal: "甜品", value: "酒店步行", tags: ["walk", "beverage", "late"], note: "姜撞奶、奶香甜品。吃完正餐想来一点甜的就很顺。" },
+      { name: "杨万金糖水铺", img: "food-thumbs/IMG_7043.jpg", day: "Day 1 / Day 2", district: "越秀", meal: "甜品/夜宵", value: "顺路去", tags: ["walk", "beverage", "late", "nearby"], note: "糖水和刨冰类，适合天气热的下午或夜宵。" },
+      { name: "荔芳传统糖水铺", img: "food-thumbs/IMG_7048.jpg", day: "Day 1 / Day 2", district: "越秀", meal: "甜品/夜宵", value: "顺路去", tags: ["walk", "beverage", "late", "nearby"], note: "芒果丸子、糖水分量足。甜品不要连吃三家，家人会投降。" },
+      { name: "赞记龙凤礼饼", img: "food-thumbs/IMG_7044.jpg", day: "Day 1 / Day 2", district: "越秀", meal: "手信", value: "顺路去", tags: ["walk", "nearby"], note: "老婆饼、凤梨酥、花生酥。适合先买少量试吃，最后一天再补货。" },
+      { name: "乐的轩酒楼（北京路）", img: "food-thumbs/IMG_7069.jpg", day: "Day 1 / Day 3", district: "北京路 / 越秀", meal: "早茶/午餐", value: "酒店步行", tags: ["walk", "breakfast", "lunch", "nearby"], note: "虾饺、烧卖、粥类，适合想在酒店附近轻松早茶。" },
+      { name: "拍档饭堂", img: "food-thumbs/IMG_7039.jpg", day: "Day 1 / Day 3", district: "越秀", meal: "午餐/晚餐", value: "附近推荐", tags: ["walk", "lunch", "dinner", "nearby"], note: "茶餐厅风格，滑蛋牛肉饭适合怕踩雷的人。人均轻松。" },
+      { name: "米香源肠粉", img: "food-thumbs/IMG_7042.jpg", day: "Day 3", district: "越秀", meal: "早餐", value: "附近推荐", tags: ["walk", "breakfast", "nearby"], note: "肠粉皮晶莹、份量不重。早上出发前可用。" },
+      { name: "穗银肠粉", img: "food-thumbs/IMG_7036.jpg", day: "Day 3", district: "越秀", meal: "早餐", value: "附近推荐", tags: ["walk", "breakfast", "nearby"], note: "猪肉香菇肠粉这类经典款，适合快速吃完去白云山。" },
+      { name: "肥姨私厨（东湖路店）", img: "food-thumbs/IMG_7088.jpg", day: "Day 3", district: "东山口 / 东湖", meal: "午餐/晚餐", value: "疲惫可跳过", tags: ["lunch", "dinner", "skip"], note: "离北京路不算远但不是必走动线。想吃本地家常菜再考虑。" },
+      { name: "酒藏咖啡（东山口店）", img: "food-thumbs/IMG_7022.jpg", day: "Day 3", district: "东山口", meal: "咖啡/蛋糕", value: "顺路去", tags: ["beverage", "nearby"], note: "如果 Day 3 从越秀回酒店前想坐一下，东山口是漂亮的咖啡支线。" },
+      { name: "FIND TEA / 广州抹茶新店", img: "food-thumbs/IMG_7023.jpg", day: "Day 1 / Day 4", district: "广州", meal: "饮品", value: "Beverage Map", tags: ["beverage", "nearby"], note: "截图里的抹茶杯很适合放进饮品地图；到附近再查分店，不要专程跑。" },
+      { name: "岛回小茶馆 / 抹茶新店", img: "food-thumbs/IMG_7026.jpg", day: "Day 1 / Day 4", district: "广州", meal: "饮品", value: "Beverage Map", tags: ["beverage", "nearby"], note: "小红书口碑偏清新抹茶。位置出发前再核对，作为顺路打卡。" },
+      { name: "阿嬷手作", img: "food-thumbs/IMG_7084.jpg", day: "Day 1 / Day 4", district: "广州", meal: "饮品", value: "Beverage Map", tags: ["beverage", "nearby"], note: "麻薯类饮品强，适合大家分着喝，不然会太饱。" },
+      { name: "柠季", img: "food-thumbs/IMG_7082.jpg", day: "Day 1 / Day 4", district: "广州", meal: "饮品", value: "Beverage Map", tags: ["beverage", "nearby"], note: "鸭屎香柠檬茶，不涩不酸，适合走热了买一杯。" },
+      { name: "五代同糖（北京路）", img: "food-thumbs/IMG_7064.jpg", day: "Day 1 / Day 3", district: "北京路 / 越秀", meal: "甜品/夜宵", value: "酒店步行", tags: ["walk", "beverage", "late"], note: "杨枝甘露雪花冰，吃辣或逛完北京路后很好用。" },
+      { name: "啫神", img: "food-thumbs/IMG_7085.jpg", day: "Day 1 / Day 3", district: "广州", meal: "晚餐", value: "顺路去", tags: ["dinner", "nearby"], note: "啫啫煲香气重，适合大人胃口；小朋友/长辈怕重口可跳。" },
+      { name: "常来大排档", img: "food-thumbs/IMG_7063.jpg", day: "Day 3", district: "广州", meal: "晚餐/夜宵", value: "夜宵地图", tags: ["dinner", "late", "nearby"], note: "大排档路线，气氛比精致更重要。适合广州塔后还不想回酒店。" },
+      { name: "植村夜市", img: "food-thumbs/IMG_7030.jpg", day: "Day 3", district: "广州郊区", meal: "夜宵", value: "疲惫可跳过", tags: ["late", "skip"], note: "截图很诱人，但它不在主路线。只有全家还有电量才去。" },
+      { name: "探探虎酸汤水饺", img: "food-thumbs/IMG_7067.jpg", day: "Day 4", district: "天河 / 体育东", meal: "午餐", value: "顺路去", tags: ["lunch", "nearby"], note: "广东胃吃久了想换酸辣口，可以放 Day 4 博物馆/太古汇之间。" },
+      { name: "客语客家菜", img: "food-thumbs/IMG_7072.jpg", day: "Day 4", district: "天河", meal: "午餐/晚餐", value: "附近推荐", tags: ["lunch", "dinner", "nearby"], note: "客家菜比较适合家庭正餐，菜式比小吃更稳。" },
+      { name: "阿强家川菜", img: "food-thumbs/IMG_7068.jpg", day: "Day 4", district: "天河", meal: "晚餐", value: "疲惫可跳过", tags: ["dinner", "skip"], note: "如果大家想吃辣才选，不然广州最后一晚优先粤菜。" },
+      { name: "艾通冰室", img: "food-thumbs/IMG_7066.jpg", day: "Day 4", district: "天河 / 广州", meal: "午餐/饮品", value: "顺路去", tags: ["lunch", "beverage", "nearby"], note: "茶餐厅备选。适合不想正式吃大餐的午后。" },
+      { name: "食慧里小笼包面馆（越秀）", img: "food-thumbs/IMG_7096.jpg", day: "Day 1 / Day 3", district: "越秀", meal: "午餐/晚餐", value: "附近推荐", tags: ["walk", "lunch", "dinner", "nearby"], note: "小笼包、面点。可作为解忧小棋的同类替代。" },
+      { name: "熊记鸡粥", img: "food-thumbs/IMG_7095.jpg", day: "Day 3", district: "广州", meal: "早餐/夜宵", value: "顺路去", tags: ["breakfast", "late", "nearby"], note: "鸡粥/烧味类，适合清淡派或晚上收尾。" },
+      { name: "潮汕牛肉火锅", img: "food-thumbs/IMG_7029.jpg", day: "Day 5", district: "深圳福田", meal: "晚餐", value: "值得排队", tags: ["dinner", "queue"], note: "这不是截图里的广州火锅路线，而是你们 Day 5 深圳锚点。到福田附近搜 4.5+、500+ reviews。" },
+      { name: "COCO Park 喜茶 / 霸王茶姬", img: "food-thumbs/IMG_7037.jpg", day: "Day 5", district: "深圳福田", meal: "饮品/夜宵", value: "酒店步行", tags: ["walk", "beverage", "late"], note: "热锅后买一杯，步行回酒店。这里比专程找饮品更聪明。" },
+      { name: "% Arabica OCT-LOFT", img: "food-thumbs/IMG_7024.jpg", day: "Day 6", district: "OCT-LOFT", meal: "饮品", value: "必去", tags: ["beverage", "queue"], note: "Day 6 最自然的 matcha hour，安排在 OCT-LOFT 慢逛中间。" },
+      { name: "蛇口海上世界海鲜 / BBQ", img: "food-thumbs/IMG_7059.jpg", day: "Day 6", district: "蛇口", meal: "晚餐/夜宵", value: "夜宵地图", tags: ["dinner", "late", "queue"], note: "最后一晚看全家状态：正式吃海鲜，或轻松大排档。" }
+    ];
+
+    const sightTips = [
+      ["Day 1 · 北京路 + 大佛寺", "先看大佛寺，再慢慢走北京路。古道遗址在脚下玻璃，晚上 5 点后更热闹。第一天只买小东西，别开局就大包小包。"],
+      ["Day 2 · 陈家祠", "进门先往左走避开人流，第一眼看屋脊陶塑，再看木雕、砖雕、庭院。拍照蹲低向上拍，建筑会更有气势。"],
+      ["Day 2 · 永庆坊", "不要在入口第一家咖啡店坐下。往巷子深处走，小店、桥、月亮桥倒影和安静咖啡都在里面。"],
+      ["Day 2 · 沙面", "如果大家累了，圣心大教堂已经给到欧式建筑氛围，沙面可以跳。若去，走内街树荫，不走大马路。"],
+      ["Day 3 · 白云山", "缆车上山，轻松走一点下坡。带水，山上水贵且点位散。长辈优先保体力，别为了“爬山感”硬走。"],
+      ["Day 3 · 广州塔", "这天最重要是黄昏和夜景。建议在塔下/江边坐着看亮灯，比上塔排队更适合家庭。"],
+      ["Day 4 · 广东省博物馆", "提前预约/带证件，馆内冷气足。看完直接拍广州大剧院外观，再去正佳/太古汇吃喝购物。"],
+      ["Day 4 · 正佳广场 + 正佳极地海洋世界", "如果有小朋友或下雨，正佳极地海洋世界在商场内，是 Day 4 的强力冷气备选。票务平台显示通常 10:00-22:00、21:30 停止检票；时间不够就只逛商场和餐饮层，别把太古汇挤掉。"],
+      ["Day 5 · 华强北", "只去赛格广场，硬控 2 小时。线、壳、支架、风扇可以买；手机电脑不要碰。每件都现场测试。"],
+      ["Day 5 · 东门", "主街只是入口，真正好买在侧巷和楼上小商场。鞋子必须试走，包包拉链和肩带要拉扯检查。"],
+      ["Day 6 · OCT-LOFT", "这是慢节奏恢复区，不用打卡每个点。看墙面、进小店、喝 % Arabica，留体力给深圳湾公园日落。"],
+      ["Day 7 · 回程", "今天不要加景点。09:38 深圳北发车，10:09 到广州南，目标是 13:00 前到白云机场。"]
+    ];
+
+    const days = [
+      {
+        day: 1, date: "Sun 10 May", title: "抵达 + 北京路", area: "越秀 / 北京路", pace: 2,
+        items: [
+          ["08:55", "槟城出发 · CZ396", "直飞广州。前一晚 online check-in。"],
+          ["13:00", "抵达广州白云机场 CAN", "过关后打车/地铁进越秀，先别安排硬景点。"],
+          ["~15:00", "入住珠光路 82 号", "放行李、洗把脸，北京路步行约 10 分钟。"],
+          ["15:30", "大佛寺（北京路）", "免费、顺路、夜景也美。适合第一天轻松开场。"],
+          ["16:30", "北京路步行街 + 小吃", "看脚下古道玻璃，试萝卜糕/煎堆/小吃，购物只买小件。", ["food", "shop"]],
+          ["18:30", "越秀公园轻散步", "如果不累再去，累了就直接 dinner。", ["skip"]],
+          ["19:30", "北京路晚餐", "大鸽饭 / 解忧小棋 / 蟹上黄 / 煲仔饭，按排队情况切换。", ["food"]]
+        ]
+      },
+      {
+        day: 2, date: "Mon 11 May", title: "荔湾西关 + 珠江夜游", area: "西关 / 永庆坊 / 珠江", pace: 5,
+        items: [
+          ["08:30", "早茶", "陶陶居 / 点都德 / 银灯食府。出门前先取号。", ["food"]],
+          ["10:30", "陈家祠", "先看屋脊陶塑，再看木雕、砖雕、庭院。"],
+          ["11:30", "粤剧艺术博物馆", "陈家祠旁边的水庭院，赶时间可只看 15 分钟。", ["skip"]],
+          ["13:00", "西关午餐小吃", "陈添记 / 银记肠粉 / 南信 / 糖水，少量多样。", ["food"]],
+          ["14:30", "永庆坊 + 月亮桥", "别停在入口，往深处走，咖啡和小店更好。", ["shop"]],
+          ["15:45", "石室圣心大教堂", "顺路拍外观，有开门就进去看彩窗。"],
+          ["16:30", "沙面岛", "树荫内街好拍，累了可跳过。", ["skip"]],
+          ["18:00", "抹茶 / 咖啡休息", "永庆坊或沙面附近找一家坐下，别硬撑。", ["food", "matcha"]],
+          ["19:00", "晚餐 + 珠江夜游", "天字码头上船，Trip.com 订票；饭可前可后。", ["food"]]
+        ]
+      },
+      {
+        day: 3, date: "Tue 12 May", title: "白云山 + 广州塔", area: "白云山 / 越秀 / 海珠", pace: 4,
+        items: [
+          ["08:00", "酒店附近早餐", "米香源肠粉 / 穗银肠粉 / 粥粉面，快速出发。", ["food"]],
+          ["08:30", "沙河服装城", "硬核批发市场，便宜但累。只给 45-60 分钟。", ["skip", "shop"]],
+          ["09:30", "白云山", "缆车上山，省腿力；山顶拍城市线。"],
+          ["12:30", "山脚午餐", "简单吃，不要过度追店。下午还要回城。", ["food"]],
+          ["14:30", "南越王博物院", "冷气 + 平地，对长辈友好。"],
+          ["16:00", "越秀公园", "五羊雕像，轻松收尾。"],
+          ["17:30", "广州塔黄昏", "推荐塔下/江边坐着看亮灯，比排队上塔更适合家庭。"],
+          ["19:30", "广州塔/江边晚餐", "江景餐厅 / 大鸽饭补票 / 烧腊饭，按体力选。", ["food"]]
+        ]
+      },
+      {
+        day: 4, date: "Wed 13 May", title: "天河博物馆 + 正佳/太古汇", area: "珠江新城 / 天河", pace: 3,
+        items: [
+          ["08:30", "快速早餐", "酒店 / 茶餐厅 / 最后一轮早茶。", ["food"]],
+          ["10:00", "广东省博物馆", "免费但留意预约；冷气足，适合慢慢看。"],
+          ["12:00", "广州大剧院外观", "Zaha Hadid 建筑，拍 20 分钟就够。"],
+          ["13:00", "天河午餐", "正佳美食层 / 珠江新城 / 客语客家菜 / 探探虎。", ["food"]],
+          ["14:30", "正佳广场 + 可选水族馆", "商场舒服；正佳极地海洋世界在里面，适合下雨/小朋友/长辈休整。", ["shop"]],
+          ["16:30", "太古汇 + % Arabica", "品质购物 + 抹茶拿铁。这里买不后悔款。", ["shop", "matcha"]],
+          ["19:30", "广州最后一餐", "太古汇餐饮层或大众点评粤菜必吃榜。", ["food"]],
+          ["21:30", "收行李 + 核对车票", "明天 12:06 广州南 → 12:35 深圳北，护照放随身。", ["train"]]
+        ]
+      },
+      {
+        day: 5, date: "Thu 14 May", title: "高铁去深圳 + 主购物日", area: "福田 / 华强北 / 东门", pace: 4,
+        items: [
+          ["10:15", "广州酒店退房", "打车/地铁去广州南，留足站内时间。"],
+          ["12:06", "高铁 广州南 → 深圳北", "12:06 发车，12:35 到达；护照进站。", ["train"]],
+          ["13:30", "抵达福田酒店", "深圳北到福田，放行李后再出门。"],
+          ["14:00", "快速午餐", "福田烧腊饭 / 茶餐厅 / 简单粉面，先补体力。", ["food"]],
+          ["15:30", "华强北赛格广场", "2 小时硬上限，线材/支架/风扇可买，电子大件跳过。", ["shop"]],
+          ["17:30", "东门主购物", "侧巷和楼上商场才是重点，衣服鞋包慢慢挑。", ["shop"]],
+          ["20:00", "潮汕牛肉火锅", "深圳晚餐锚点：嫩肉、匙柄、胸口朥、牛筋丸。", ["food"]],
+          ["21:45", "COCO Park 饮品", "喜茶 / 霸王茶姬，步行回酒店。", ["matcha"]]
+        ]
+      },
+      {
+        day: 6, date: "Fri 15 May", title: "Fairy Lake, OCT + Shekou", area: "OCT / Bay Park / Shekou", pace: 3,
+        items: [
+          ["08:30", "Relaxed breakfast", "Hotel, dim sum, or HK café.", ["food"]],
+          ["09:30", "Fairy Lake Botanical Garden", "Peaceful morning for all ages."],
+          ["11:30", "Splendid China Folk Village", "Cultural performances and less heat walking."],
+          ["13:30", "Lunch in OCT", "OCT-LOFT cafés or nearby restaurants.", ["food"]],
+          ["15:00", "OCT-LOFT Creative Zone", "Murals, boutiques, slow wander."],
+          ["16:30", "% Arabica OCT-LOFT", "Best matcha stop of the whole trip.", ["matcha"]],
+          ["17:15", "MixC World last-chance gifts", "45-minute focused stop.", ["shop"]],
+          ["18:15", "Shenzhen Bay Park", "Golden hour with Hong Kong mountain views."],
+          ["20:00", "Farewell dinner at Shekou", "Seafood, hotpot, or BBQ dai pai dong.", ["food"]]
+        ]
+      },
+      {
+        day: 7, date: "Sat 16 May", title: "纯回程日", area: "深圳 → 广州机场 → 槟城", pace: 2,
+        items: [
+          ["07:30", "早餐 + 退房", "前一晚必须收好行李，今天不加景点。"],
+          ["08:15", "出发去深圳北", "给地铁/打车和进站留 buffer。"],
+          ["09:38", "高铁 深圳北 → 广州南", "09:38 发车，10:09 到达。", ["train"]],
+          ["10:30", "转去白云机场 CAN", "地铁/DiDi/机场巴士，目标 13:00 前到机场。"],
+          ["12:00", "最后一餐", "机场或途中简单吃，烧腊饭/机场 food court/手信都可以。", ["food"]],
+          ["13:00", "CZ395 办登机", "国际航班，逛 duty free，16:50 起飞。"],
+          ["21:00", "抵达槟城", "把照片放进 Trip Gallery。"]
+        ]
+      }
+    ];
+
+    const shops = [
+      ["北京路 · Day 1", "⭐⭐⭐", "轻买：发夹、袜子、小饰品、零食。衣服先忍住，后面更好买。"],
+      ["永庆坊 · Day 2", "⭐⭐⭐⭐", "审美区：极简上衣/裙子、小肩包、手作饰品、家居小物。往巷子深处走。"],
+      ["沙河服装城 · Day 3", "⭐⭐⭐", "硬核便宜但累。无冷气、很乱、只适合 45-60 分钟快闪。"],
+      ["正佳广场 · Day 4", "⭐⭐⭐", "家庭友好：冷气、厕所、座位、美食层、水族馆备选。"],
+      ["太古汇 · Day 4", "⭐⭐⭐⭐", "不后悔区：高质量基础款、鞋、护肤、生活方式礼物，% Arabica 在这里。"],
+      ["华强北 · Day 5", "⭐⭐⭐⭐⭐", "电子配件宝库。赛格 1-3F 配件，4-6F 小工具。每件现场测试。"],
+      ["东门 · Day 5", "⭐⭐⭐⭐⭐", "主战场：衣服、鞋、包。进侧巷和楼上，开价 50-60% 起谈。"],
+      ["万象天地 · Day 6", "⭐⭐⭐", "最后礼物和零食补货。45 分钟内解决，别错过深圳湾日落。"]
+    ];
+
+    const routes = [
+      { key: "airport", label: "CAN → 酒店", title: "广州白云机场 → 越秀酒店", steps: ["打车/DiDi：约 40-50 分钟，看路况。", "地铁：机场线进城，公园前一带换乘/步行/打车到珠光路。", "中文地址：广州市越秀区珠光路82号。"] },
+      { key: "train1", label: "广州 → 深圳", title: "5月14日 · 广州南 → 深圳北", steps: ["10:15 左右离开越秀酒店比较稳。", "12:06 广州南发车，12:35 到深圳北。", "进站用护照，行李尽量轻，车程 29 分钟。", "抵达后去福田酒店放行李，再安排午餐和华强北。"] },
+      { key: "futian", label: "深圳北 → 福田", title: "深圳北 → 福田酒店", steps: ["深圳北可坐地铁 4 号线往福田方向。", "酒店：福田区石厦东村321号。", "COCO Park / 喜茶 / 霸王茶姬离酒店很近，适合晚上收尾。"] },
+      { key: "train2", label: "深圳 → CAN", title: "5月16日 · 深圳北 → 广州南 → 白云机场", steps: ["08:15 左右离开福田酒店，别加购物点。", "09:38 深圳北发车，10:09 到广州南。", "广州南后直接转白云机场：地铁 / DiDi / 机场巴士。", "目标 13:00 前到 CAN，CZ395 16:50 起飞。"] }
+    ];
+
+    const packing = [
+      "护照", "机票订单", "高铁订单", "酒店中文地址",
+      "支付宝绑卡", "微信可登录", "高德地图离线/收藏点", "滴滴可用",
+      "香港/国际 eSIM", "充电宝", "USB-C 线", "小风扇",
+      "折叠伞", "防晒", "N95 口罩", "舒服鞋",
+      "RMB 500-800 备用现金", "药物 + 保险资料"
+    ];
+
+    function toast(message) {
+      const el = $("#toast");
+      el.textContent = message;
+      el.classList.add("show");
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => el.classList.remove("show"), 1450);
+    }
+
+    function renderFood(filter = "all") {
+      $("#foodList").innerHTML = foodCards
+        .filter(card => filter === "all" || card.city === filter || card.tags.includes(filter))
+        .map(card => `
+          <article class="food-card">
+            <div class="card-title">
+              <h3>${card.name}</h3>
+              <small>${card.rating}</small>
+            </div>
+            <div class="tags">
+              <span class="tag food">${card.area}</span>
+              <span class="tag">${card.near}</span>
+              ${card.tags.includes("must") ? '<span class="tag food">必吃榜</span>' : ''}
+              ${card.tags.includes("xhs") ? '<span class="tag matcha">小红书</span>' : ''}
+              ${card.tags.includes("hotel") ? '<span class="tag">酒店步行</span>' : ''}
+              ${card.tags.includes("queue") ? '<span class="tag food">值得排队</span>' : ''}
+            </div>
+            <p class="card-copy">${card.dish}</p>
+            <div class="mini-actions">
+              <button class="icon-btn" data-heart="${card.name}" aria-label="收藏餐厅">♡</button>
+              <button class="text-btn" data-copy="${card.name} · ${card.near}">复制店名</button>
+            </div>
+          </article>
+        `).join("");
+    }
+
+    function renderToday() {
+      const dayNo = currentTripDay();
+      const day = days[Math.max(0, Math.min(6, dayNo ? dayNo - 1 : 0))];
+      const nearby = xhsFood.filter(item => item.day.includes(`Day ${day.day}`)).slice(0, 3);
+      $("#todayCard").innerHTML = `
+        <div class="card-title">
+          <h3>${dayNo ? `Day ${day.day} · ${day.title}` : "出发前预备"}</h3>
+          <small>${day.date}</small>
+        </div>
+        <p class="card-copy">${dayNo ? day.area : "先把支付宝/微信/高德/滴滴、eSIM、高铁票和截图美食库准备好。"}</p>
+        <div class="today-grid">
+          <div class="today-tile"><b>今日重点</b><span>${day.items.find(item => item[3]?.includes("food"))?.[1] || "先看行程"}</span></div>
+          <div class="today-tile"><b>疲惫可跳过</b><span>${day.items.find(item => item[3]?.includes("skip"))?.[1] || "不加临时景点"}</span></div>
+          <div class="today-tile"><b>附近推荐</b><span>${nearby[0]?.name || "看必吃榜"}</span></div>
+          <div class="today-tile"><b>夜宵地图</b><span>${xhsFood.find(item => item.day.includes(`Day ${day.day}`) && item.tags.includes("late"))?.name || "回酒店休息"}</span></div>
+        </div>
+      `;
+    }
+
+    function renderXhsFood(filter = "all") {
+      $("#xhsList").innerHTML = xhsFood
+        .filter(item => filter === "all" || item.tags.includes(filter))
+        .map(item => `
+          <article class="xhs-card">
+            <img src="${item.img}" alt="${item.name}">
+            <div>
+              <div class="card-title">
+                <h3>${item.name}</h3>
+                <small>${item.day}</small>
+              </div>
+              <div class="xhs-meta">
+                <span class="tag food">${item.value}</span>
+                <span class="tag">${item.district}</span>
+                <span class="tag">${item.meal}</span>
+                ${item.tags.includes("walk") ? '<span class="tag">酒店步行</span>' : ''}
+                ${item.tags.includes("beverage") ? '<span class="tag matcha">Beverage Map</span>' : ''}
+                ${item.tags.includes("late") ? '<span class="tag food">夜宵地图</span>' : ''}
+                ${item.tags.includes("skip") ? '<span class="tag skip">疲惫可跳过</span>' : ''}
+              </div>
+              <p>${item.note}</p>
+              <div class="mini-actions" style="margin-top:8px;">
+                <button class="text-btn" data-copy="${item.name} · ${item.district} · ${item.meal}">复制</button>
+              </div>
+            </div>
+          </article>
+        `).join("");
+    }
+
+    function renderMatcha() {
+      const checked = store.get("matchaChecked", {});
+      $("#matchaList").innerHTML = matchaSpots.map(([name, note], i) => `
+        <label class="check-row">
+          <input type="checkbox" data-matcha="${i}" ${checked[i] ? "checked" : ""}>
+          <span><b>${name}</b><span>${note}</span></span>
+        </label>
+      `).join("");
+      updateMatchaCount();
+    }
+
+    function updateMatchaCount() {
+      const total = matchaSpots.length;
+      const done = $$("[data-matcha]").filter(i => i.checked).length;
+      $("#matchaCount").textContent = `${done}/${total}`;
+    }
+
+    function renderDays() {
+      $("#dayList").innerHTML = days.map(day => {
+        const paceClass = day.pace >= 5 ? "full" : day.pace >= 3 ? "medium" : "";
+        const dots = Array.from({ length: 5 }, (_, i) => `<span class="${i < day.pace ? "on" : ""}"></span>`).join("");
+        const items = day.items.map(([time, title, text, tags = []]) => `
+          <div class="time-item">
+            <div class="time">${time}</div>
+            <div>
+              <h4>${title}</h4>
+              <p>${text}</p>
+              ${tags.length ? `<div class="tags" style="margin-top:7px;">${tags.map(tag => `<span class="tag ${tag}">${tag === "skip" ? "疲惫可跳过" : tag === "food" ? "吃喝" : tag === "shop" ? "购物" : tag === "matcha" ? "抹茶" : tag === "train" ? "交通" : tag}</span>`).join("")}</div>` : ""}
+            </div>
+          </div>
+        `).join("");
+        return `
+          <details ${day.day === currentTripDay() ? "open" : ""}>
+            <summary>
+              <div class="day-head">
+                <div>
+                  <h3>Day ${day.day} · ${day.title}</h3>
+                  <p class="micro">${day.area}</p>
+                </div>
+                <span class="date">${day.date}</span>
+              </div>
+              <div class="pace">
+                <div class="pace-label"><span>Family pace</span><span>${day.pace <= 2 ? "轻松" : day.pace >= 5 ? "满档" : "均衡"}</span></div>
+                <div class="pace-dots ${paceClass}">${dots}</div>
+              </div>
+            </summary>
+            <div class="day-body"><div class="timeline">${items}</div></div>
+          </details>
+        `;
+      }).join("");
+    }
+
+    function renderShops() {
+      $("#shopList").innerHTML = shops.map(([name, stars, text]) => `
+        <article class="shop-card">
+          <div class="card-title"><h3>${name}</h3><small>${stars}</small></div>
+          <p>${text}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderSightTips() {
+      $("#sightList").innerHTML = sightTips.map(([title, text]) => `
+        <article class="sight-card">
+          <h3>${title}</h3>
+          <p>${text}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderRoutes(activeKey = routes[0].key) {
+      $("#routeTabs").innerHTML = routes.map(route => `<button class="route-btn ${route.key === activeKey ? "active" : ""}" data-route="${route.key}">${route.label}</button>`).join("");
+      const route = routes.find(item => item.key === activeKey) || routes[0];
+      $("#routeDisplay").innerHTML = `<h3>${route.title}</h3><ol>${route.steps.map(step => `<li>${step}</li>`).join("")}</ol>`;
+    }
+
+    function renderPacking() {
+      const checked = store.get("packingChecked", {});
+      $("#packingList").innerHTML = packing.map((item, i) => `
+        <label class="check-row">
+          <input type="checkbox" data-pack="${i}" ${checked[i] ? "checked" : ""}>
+          <span><b>${item}</b></span>
+        </label>
+      `).join("");
+      updatePackCount();
+    }
+
+    function updatePackCount() {
+      const done = $$("[data-pack]").filter(i => i.checked).length;
+      $("#packCount").textContent = `${done}/${packing.length}`;
+    }
+
+    function renderBudget() {
+      const items = store.get("budgetItems", []);
+      const rate = Number($("#myrRate").value || .66);
+      const total = items.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+      $("#budgetTotal").textContent = `RMB ${total.toFixed(0)} · RM ${(total * rate).toFixed(0)}`;
+      $("#budgetList").innerHTML = items.length ? items.map((item, index) => `
+        <div class="budget-item">
+          <span>${item.name} · ${item.category}</span>
+          <span>RMB ${Number(item.amount).toFixed(0)} <button class="chip" data-remove-budget="${index}" style="min-height:26px;padding:4px 7px;margin-left:4px;">×</button></span>
+        </div>
+      `).join("") : `<div class="tiny">No spending logged yet.</div>`;
+    }
+
+    function currentTripDay(now = new Date()) {
+      const start = new Date("2026-05-10T00:00:00+08:00");
+      const end = new Date("2026-05-16T23:59:59+08:00");
+      if (now < start) return 0;
+      if (now > end) return 7;
+      return Math.min(7, Math.floor((now - start) / 86400000) + 1);
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const tripStart = new Date("2026-05-10T08:55:00+08:00");
+      const tripEnd = new Date("2026-05-16T21:00:00+08:00");
+      const diff = tripStart - now;
+      const day = currentTripDay(now);
+      let progress = 0;
+      if (now >= tripStart && now <= tripEnd) progress = ((now - tripStart) / (tripEnd - tripStart)) * 100;
+      if (now > tripEnd) progress = 100;
+      $("#trip-progress").style.width = `${Math.max(0, Math.min(100, progress))}%`;
+      $("#trip-day").textContent = day === 0 ? "Day 0 of 7" : `Day ${day} of 7`;
+      $("#trip-state").textContent = now < tripStart ? "Countdown to takeoff" : now <= tripEnd ? "Trip in progress" : "Trip memories mode";
+      if (diff <= 0) {
+        $("#cd-days").textContent = "0";
+        $("#cd-hours").textContent = "0";
+        $("#cd-mins").textContent = "0";
+        $("#cd-secs").textContent = "0";
+        return;
+      }
+      const daysLeft = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+      $("#cd-days").textContent = daysLeft;
+      $("#cd-hours").textContent = hours;
+      $("#cd-mins").textContent = mins;
+      $("#cd-secs").textContent = secs;
+    }
+
+    function wirePhotoInput(inputId, gridId) {
+      $(inputId).addEventListener("change", event => {
+        const files = [...event.target.files].slice(0, 12);
+        const area = $("#xhsArea")?.value || "Trip photo";
+        if (!files.length) return;
+        $(gridId).innerHTML = "";
+        files.forEach(file => {
+          const reader = new FileReader();
+          reader.onload = e => {
+            const card = document.createElement("div");
+            card.className = "photo-card";
+            card.innerHTML = `<img src="${e.target.result}" alt=""><span>${inputId === "#xhsUpload" ? area : file.name}</span>`;
+            $(gridId).appendChild(card);
+          };
+          reader.readAsDataURL(file);
+        });
+      });
+    }
+
+    async function refreshWeather() {
+      const grid = $("#weatherGrid");
+      grid.innerHTML = `<div class="weather-card"><b>Refreshing</b><span>Checking Guangzhou and Shenzhen forecast...</span></div>`;
+      const cities = [
+        ["Guangzhou", 23.1291, 113.2644],
+        ["Shenzhen", 22.5431, 114.0579]
+      ];
+      try {
+        const results = await Promise.all(cities.map(async ([name, lat, lon]) => {
+          const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FShanghai&start_date=2026-05-10&end_date=2026-05-16`;
+          const data = await fetch(url).then(r => r.json());
+          const max = data.daily.temperature_2m_max;
+          const min = data.daily.temperature_2m_min;
+          const rain = data.daily.precipitation_probability_max;
+          const avgMax = max.reduce((a, b) => a + b, 0) / max.length;
+          const avgMin = min.reduce((a, b) => a + b, 0) / min.length;
+          const wettest = Math.max(...rain);
+          return `<div class="weather-card"><b>${name}</b><span>${avgMin.toFixed(0)}-${avgMax.toFixed(0)}°C average · rain risk up to ${wettest}% during trip dates.</span></div>`;
+        }));
+        grid.innerHTML = results.join("") + `<div class="weather-card"><b>Packing cue</b><span>Breathable outfits, umbrella, sunscreen, mini fan, and one light layer for malls/trains.</span></div>`;
+        toast("Weather refreshed");
+      } catch (err) {
+        grid.innerHTML = `<div class="weather-card"><b>Offline forecast</b><span>Warm and humid in both cities. Pack umbrella, sunscreen, breathable clothes, and light mall layer.</span></div>`;
+        toast("Weather needs internet");
+      }
+    }
+
+    document.addEventListener("click", event => {
+      const filter = event.target.closest("[data-filter]");
+      if (filter) {
+        $$("#foodFilters .chip").forEach(btn => btn.classList.toggle("active", btn === filter));
+        renderFood(filter.getAttribute("data-filter"));
+      }
+      const xhsFilter = event.target.closest("[data-xhs-filter]");
+      if (xhsFilter) {
+        $$("#xhsFilters .chip").forEach(btn => btn.classList.toggle("active", btn === xhsFilter));
+        renderXhsFood(xhsFilter.getAttribute("data-xhs-filter"));
+      }
+      const copy = event.target.closest("[data-copy]");
+      if (copy) {
+        navigator.clipboard?.writeText(copy.dataset.copy);
+        toast("已复制");
+      }
+      const heart = event.target.closest("[data-heart]");
+      if (heart) {
+        heart.textContent = heart.textContent === "♡" ? "♥" : "♡";
+        toast(heart.textContent === "♥" ? "已收藏" : "已取消");
+      }
+      const route = event.target.closest("[data-route]");
+      if (route) renderRoutes(route.dataset.route);
+      const remove = event.target.closest("[data-remove-budget]");
+      if (remove) {
+        const items = store.get("budgetItems", []);
+        items.splice(Number(remove.dataset.removeBudget), 1);
+        store.set("budgetItems", items);
+        renderBudget();
+      }
+    });
+
+    document.addEventListener("change", event => {
+      if (event.target.matches("[data-matcha]")) {
+        const checked = store.get("matchaChecked", {});
+        checked[event.target.dataset.matcha] = event.target.checked;
+        store.set("matchaChecked", checked);
+        updateMatchaCount();
+      }
+      if (event.target.matches("[data-pack]")) {
+        const checked = store.get("packingChecked", {});
+        checked[event.target.dataset.pack] = event.target.checked;
+        store.set("packingChecked", checked);
+        updatePackCount();
+      }
+    });
+
+    $("#addBudget").addEventListener("click", () => {
+      const name = $("#budgetName").value.trim();
+      const amount = Number($("#budgetAmount").value);
+      if (!name || !amount) return toast("请输入项目 + RMB");
+      const items = store.get("budgetItems", []);
+      items.unshift({ name, amount, category: $("#budgetCategory").value });
+      store.set("budgetItems", items);
+      $("#budgetName").value = "";
+      $("#budgetAmount").value = "";
+      renderBudget();
+    });
+    $("#clearBudget").addEventListener("click", () => {
+      store.set("budgetItems", []);
+      renderBudget();
+      toast("已清空预算");
+    });
+    $("#myrRate").addEventListener("input", renderBudget);
+    $("#refreshWeather").addEventListener("click", refreshWeather);
+
+    renderFood();
+    renderToday();
+    renderXhsFood();
+    renderMatcha();
+    renderDays();
+    renderShops();
+    renderRoutes();
+    renderSightTips();
+    renderPacking();
+    renderBudget();
+    wirePhotoInput("#xhsUpload", "#xhsGrid");
+    wirePhotoInput("#tripUpload", "#tripGrid");
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
