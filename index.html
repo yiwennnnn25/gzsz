@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fff8ef">
   <title>China Family Trip 2026</title>
+  <link rel="icon" href="share/favicon.png">
+  <link rel="apple-touch-icon" href="share/apple-touch-icon.png">
+  <link rel="manifest" href="share/manifest.webmanifest">
   <style>
     :root {
       color-scheme: light;
@@ -59,11 +62,39 @@
       overflow: hidden;
       padding: 18px 16px 16px;
       background:
-        linear-gradient(145deg, rgba(255,248,239,.78), rgba(255,231,214,.8)),
-        url("data:image/svg+xml,%3Csvg width='430' height='260' viewBox='0 0 430 260' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='430' height='260' fill='%23fff3e5'/%3E%3Ccircle cx='62' cy='72' r='31' fill='%23f27d9d' fill-opacity='.35'/%3E%3Ccircle cx='356' cy='48' r='45' fill='%238ea95d' fill-opacity='.24'/%3E%3Cpath d='M0 202 C86 160 139 215 212 177 C286 139 350 161 430 125 L430 260 L0 260Z' fill='%2399c9e6' fill-opacity='.25'/%3E%3Cpath d='M0 222 C88 197 156 231 231 201 C302 172 354 193 430 158 L430 260 L0 260Z' fill='%238ea95d' fill-opacity='.18'/%3E%3Cpath d='M29 138 h74 a10 10 0 0 1 10 10 v51 H19 v-51 a10 10 0 0 1 10-10Z' fill='%23fffdf8' stroke='%23d7a23a' stroke-width='3'/%3E%3Cpath d='M52 138 v-18 h28 v18' fill='none' stroke='%23d7a23a' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M306 118 c22-26 62-26 84 0 v77 h-84Z' fill='%23fffdf8' stroke='%23f27d9d' stroke-width='3'/%3E%3Cpath d='M319 142 h58 M319 164 h58 M337 118 v77 M359 118 v77' stroke='%23f27d9d' stroke-width='2' opacity='.45'/%3E%3Ccircle cx='213' cy='118' r='34' fill='%23fffdf8' stroke='%238ea95d' stroke-width='4'/%3E%3Cpath d='M196 115 c8 13 26 14 35 0' fill='none' stroke='%238ea95d' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='203' cy='103' r='4' fill='%232f261f'/%3E%3Ccircle cx='225' cy='103' r='4' fill='%232f261f'/%3E%3Cpath d='M186 151 h56' stroke='%23d7a23a' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
+        radial-gradient(circle at 18% 18%, rgba(242, 125, 157, .18), transparent 18%),
+        radial-gradient(circle at 82% 20%, rgba(156, 211, 189, .22), transparent 20%),
+        radial-gradient(circle at 75% 76%, rgba(153, 201, 230, .18), transparent 22%),
+        linear-gradient(145deg, #fff8ef 0%, #fff4e6 48%, #ffeedd 100%);
       background-size: cover;
       background-position: center;
       border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      right: -18px;
+      top: 76px;
+      width: 118px;
+      height: 118px;
+      border: 4px solid rgba(242, 125, 157, .17);
+      border-radius: 28px;
+      transform: rotate(12deg);
+    }
+
+    .hero::after {
+      left: 22px;
+      top: 94px;
+      width: 78px;
+      height: 78px;
+      border: 4px solid rgba(142, 169, 93, .16);
+      border-radius: 999px;
     }
 
     .topline {
@@ -95,6 +126,12 @@
       font-size: 34px;
       line-height: .94;
       letter-spacing: 0;
+      text-shadow: 0 1px 0 rgba(255,255,255,.72);
+      position: relative;
+      display: inline-block;
+      padding: 2px 10px 4px 0;
+      background: linear-gradient(90deg, rgba(255,248,239,0) 0 8px, rgba(255,255,255,.55) 8px 100%);
+      box-decoration-break: clone;
     }
 
     .subtitle {
@@ -102,8 +139,14 @@
       margin: 10px 0 0;
       color: #5d4b3a;
       font-size: 14px;
-      line-height: 1.35;
+      line-height: 1.38;
       font-weight: 650;
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.54);
+      backdrop-filter: blur(10px);
+      box-shadow: inset 0 0 0 1px rgba(106, 77, 44, .06);
     }
 
     .countdown {
@@ -197,7 +240,7 @@
       margin-top: 14px;
       padding: 12px;
       border-radius: var(--radius);
-      background: #fff;
+      background: linear-gradient(180deg, #fff, #fffaf4);
       border: 1px solid var(--line);
     }
 
@@ -215,7 +258,7 @@
       margin-top: 8px;
       overflow: hidden;
       border-radius: 999px;
-      background: #f0e5d4;
+      background: linear-gradient(90deg, #f2e2c9, #f4d8d8, #e6f0dd);
     }
 
     .bar span {
@@ -223,7 +266,7 @@
       height: 100%;
       width: 0%;
       border-radius: inherit;
-      background: linear-gradient(90deg, var(--rose), var(--peach), var(--matcha));
+      background: linear-gradient(90deg, #ff7f97, #ffb16f, #9cc36a);
       transition: width .4s ease;
     }
 
@@ -914,11 +957,11 @@
   <main class="app">
     <header class="hero" id="home">
       <div class="topline">
-        <span class="pill">🇨🇳 Guangzhou + Shenzhen</span>
-        <span class="pill">6 pax</span>
+        <span class="pill">🇨🇳 广州 + 深圳</span>
+        <span class="pill">6 位家人</span>
       </div>
-      <h1>China Family Food Trip</h1>
-      <p class="subtitle">10-16 May 2026 · Penang departure · built around food, gentle pacing, matcha, shopping, and easy family decisions.</p>
+      <h1>广州深圳 吃喝玩乐之旅</h1>
+      <p class="subtitle">5月10-16日 · 槟城出发 · 主打好吃、好逛、好拍，跟着胃口和体力走，不赶行程。</p>
       <div class="countdown" aria-label="Trip countdown">
         <div class="count-box"><b id="cd-days">--</b><span>days</span></div>
         <div class="count-box"><b id="cd-hours">--</b><span>hours</span></div>
@@ -927,8 +970,8 @@
       </div>
       <div class="progress-shell">
         <div class="progress-row">
-          <span id="trip-state">Pre-trip mode</span>
-          <span id="trip-day">Day 0 of 7</span>
+          <span id="trip-state">起飞倒数</span>
+          <span id="trip-day">出发前</span>
         </div>
         <div class="bar"><span id="trip-progress"></span></div>
       </div>
@@ -936,10 +979,10 @@
 
     <section id="xhs">
       <div class="stats-grid">
-        <div class="stat"><b>7</b><span>days with 2 city bases</span></div>
-        <div class="stat"><b>18+</b><span>restaurant and snack options</span></div>
-        <div class="stat"><b>10</b><span>matcha and café stops</span></div>
-        <div class="stat"><b>2</b><span>high-speed train rides</span></div>
+        <div class="stat"><b>7</b><span>天，2 个城市基地</span></div>
+        <div class="stat"><b>18+</b><span>必吃餐厅和小吃点</span></div>
+        <div class="stat"><b>10</b><span>抹茶 / 咖啡打卡点</span></div>
+        <div class="stat"><b>2</b><span>高铁穿城移动</span></div>
       </div>
     </section>
 
@@ -1588,8 +1631,8 @@
       if (now >= tripStart && now <= tripEnd) progress = ((now - tripStart) / (tripEnd - tripStart)) * 100;
       if (now > tripEnd) progress = 100;
       $("#trip-progress").style.width = `${Math.max(0, Math.min(100, progress))}%`;
-      $("#trip-day").textContent = day === 0 ? "Day 0 of 7" : `Day ${day} of 7`;
-      $("#trip-state").textContent = now < tripStart ? "Countdown to takeoff" : now <= tripEnd ? "Trip in progress" : "Trip memories mode";
+      $("#trip-day").textContent = day === 0 ? "出发前" : `第 ${day} 天 / 共 7 天`;
+      $("#trip-state").textContent = now < tripStart ? "起飞倒数" : now <= tripEnd ? "旅途中" : "回忆模式";
       if (diff <= 0) {
         $("#cd-days").textContent = "0";
         $("#cd-hours").textContent = "0";
